@@ -40,13 +40,13 @@ LDR = ADC(Pin(33))
 LDR.atten(ADC.ATTN_11DB)
 
 HTTP_HEADERS = {'Content-Type': 'application/json'} 
-THINGSPEAK_WRITE_API_KEY = '410TITM0F6GYAQYF' 
+THINGSPEAK_WRITE_API_KEY = '**************' 
 
 UPDATE_TIME_INTERVAL = 15000  # in ms 
 last_update = time.ticks_ms()
 
-ssid = 'dell ci5'
-password = '12345678'
+ssid = 'abcd'
+password = '*************'
 
 def connect_wifi(ssid, password):
     #Connect to your network
@@ -70,8 +70,8 @@ def send_message(phone_number, api_key, message):
         print('Error')
         print(response.text)
 
-phone_number = '+923112831288'
-api_key = '9329969'
+phone_number = '************'
+api_key = '*********'
 
 connect_wifi(ssid,password)
 while True: 
